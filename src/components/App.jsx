@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import UserPainting from './UserPainting/UserPainting';
 import user from '../user.json';
 
