@@ -1,7 +1,9 @@
 import UserPainting from './UserPainting/UserPainting';
 import Statistics from './Statistics/Statistics';
+import FriendList from './FriendList/FriendList';
 import user from '../user.json';
 import downloads from '../data.json';
+import friends from '../friends.json';
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={downloads} />
+      <FriendList friends={friends} />
     </div>
   );
 }
