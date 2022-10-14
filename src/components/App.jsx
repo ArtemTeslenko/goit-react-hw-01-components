@@ -1,14 +1,16 @@
-import UserPainting from './UserPainting/UserPainting';
+import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 import user from '../user.json';
 import downloads from '../data.json';
 import friends from '../friends.json';
+import transactions from '../transactions';
 
 export default function App() {
   return (
     <div>
-      <UserPainting
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -17,6 +19,7 @@ export default function App() {
       />
       <Statistics title="Upload stats" stats={downloads} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }

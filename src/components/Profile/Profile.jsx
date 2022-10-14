@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import css from './UserPainting.module.css';
+import css from './Profile.module.css';
 
-export default function UserPainting(props) {
+export default function Profile(props) {
   const { username, tag, location, avatar, stats } = props;
   return (
     <div className={css.profile}>
@@ -30,7 +30,7 @@ export default function UserPainting(props) {
   );
 }
 
-UserPainting.propTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
