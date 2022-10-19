@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const TransactionHistoryTable = styled.table`
-  width: 420px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0 0 4px 1px #2f2f2f, inset 0 0 10px 1px #d9d5d5;
-  border-radius: 4px;
+  width: ${p => p.theme.mainContainer.maxWidth};
+  margin-bottom: ${p => p.theme.mainContainer.marginBottom};
+  margin-left: ${p => p.theme.mainContainer.marginLeft};
+  margin-right: ${p => p.theme.mainContainer.marginRight};
+  text-align: ${p => p.theme.mainContainer.textAlign};
+  padding: ${p => p.theme.mainContainer.padding};
+  box-shadow: ${p => p.theme.mainContainer.boxShadow};
+  border-radius: ${p => p.theme.mainContainer.borderRadius};
 
   & thead {
     background-color: #239dd5;
